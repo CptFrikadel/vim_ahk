@@ -1,5 +1,6 @@
 ﻿#If Vim.IsVimGroup()
 Esc::Vim.State.HandleEsc()
+Capslock::Vim.State.HandleEsc()
 ^[::Vim.State.HandleCtrlBracket()
 
 #If Vim.IsVimGroup() and (Vim.State.IsCurrentVimMode("Insert")) and (Vim.Conf["VimJJ"]["val"] == 1)
